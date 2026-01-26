@@ -1,7 +1,8 @@
 {
-  "fearGreed": null,
-  "btcDominance": null,
-  "altseasonIndex": null,
-  "lastUpdate": null,
-  "error": "Aguardando primeira atualização do GitHub Actions"
+  "fearGreed": 29,
+  "btcDominance": 59.1,
+  "altseasonIndex": 17,
+  "lastUpdate": "2026-01-26T23:32:13.433Z",
+  "error": null,
+  "fearGreedClassification": "Fear"
 }
