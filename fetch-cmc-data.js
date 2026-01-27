@@ -58,57 +58,63 @@ async function fetchCMCData() {
         console.error('❌ Erro ao buscar Fear & Greed:', e.message);
     }
 
-    // 3. Calcular Altseason Index (Top 50 vs BTC nos últimos 90 dias)
+    // 3. Calcular Altseason Index (Top 50 vs BTC)
+    // Usando dados de ATH % do CoinGecko como proxy para performance
     try {
-        console.log('📊 Calculando Altseason Index (90 dias)...');
+        console.log('📊 Calculando Altseason Index...');
         
-        // Buscar Top 100 coins com variação de 90 dias do CoinGecko
-        const response = await fetch(
-            'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=90d',
-            { headers: { 'Accept': 'application/json' } }
+        // Aguardar para evitar rate limit
+        await new Promise(r => setTimeout(r, 1000));
+        
+        // Buscar Top 100 coins com dados de ATH
+        const coinsRes = await fetch(
+            'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
         );
-
-        if (response.ok) {
-            const coins = await response.json();
+        
+        if (coinsRes.ok) {
+            const coins = await coinsRes.json();
             
             // Encontrar BTC
             const btc = coins.find(c => c.id === 'bitcoin');
             if (!btc) throw new Error('BTC não encontrado');
             
-            const btcChange90d = btc.price_change_percentage_90d_in_currency || 0;
-            console.log('   BTC 90d:', btcChange90d.toFixed(2) + '%');
+            const btcAthChange = btc.ath_change_percentage || 0;
+            console.log('   BTC ATH %:', btcAthChange.toFixed(2) + '%');
             
             // Filtrar altcoins (excluir BTC, stablecoins, wrapped tokens)
             const excluded = [
                 'bitcoin', 'tether', 'usd-coin', 'dai', 'binance-usd', 'true-usd', 
                 'pax-dollar', 'first-digital-usd', 'ethena-usde', 'usds',
                 'wrapped-bitcoin', 'steth', 'weth', 'wrapped-steth', 'cbeth',
-                'rocket-pool-eth', 'frax-ether', 'coinbase-wrapped-btc'
+                'rocket-pool-eth', 'frax-ether', 'coinbase-wrapped-btc', 'leo-token',
+                'multi-collateral-dai'
             ];
             
-            const altcoins = coins.filter(c => 
-                !excluded.includes(c.id) && 
-                c.price_change_percentage_90d_in_currency !== null
-            ).slice(0, 50);
+            const altcoins = coins.filter(c => !excluded.includes(c.id)).slice(0, 50);
             
-            // Contar quantas altcoins superaram BTC
+            // Contar altcoins mais próximas do ATH que BTC (melhor performance)
             let outperformCount = 0;
             altcoins.forEach(coin => {
-                const altChange = coin.price_change_percentage_90d_in_currency || 0;
-                if (altChange > btcChange90d) {
+                const altAthChange = coin.ath_change_percentage || -100;
+                if (altAthChange > btcAthChange) {
                     outperformCount++;
                 }
             });
             
-            // Altseason Index = % de altcoins que superaram BTC
-            // 75%+ = Altseason, 25%- = Bitcoin Season
-            const altseasonValue = Math.round((outperformCount / altcoins.length) * 100);
-            result.altseasonIndex = altseasonValue;
+            // Combinar ATH ratio com inverse de BTC dominance
+            const rawRatio = outperformCount / altcoins.length;
+            const btcDomFactor = (100 - result.btcDominance) / 100;
             
-            console.log(`✅ Altseason Index: ${altseasonValue} (${outperformCount}/${altcoins.length} altcoins > BTC)`);
+            // Fórmula: 40% ATH ratio + 60% inverse dominance
+            const combinedScore = (rawRatio * 40) + (btcDomFactor * 60);
+            result.altseasonIndex = Math.round(combinedScore);
+            result.altseasonIndex = Math.min(100, Math.max(0, result.altseasonIndex));
+            
+            console.log(`   Altcoins > BTC ATH: ${outperformCount}/${altcoins.length}`);
+            console.log(`   BTC.D factor: ${(btcDomFactor * 100).toFixed(1)}%`);
+            console.log(`✅ Altseason Index: ${result.altseasonIndex}`);
         } else {
-            console.error('❌ CoinGecko falhou:', response.status);
-            // Fallback: usar cálculo baseado em dominância
+            // Fallback baseado em dominância
             if (result.btcDominance) {
                 result.altseasonIndex = Math.round(100 - (result.btcDominance * 1.4));
                 result.altseasonIndex = Math.min(100, Math.max(0, result.altseasonIndex));
@@ -117,7 +123,6 @@ async function fetchCMCData() {
         }
     } catch (e) {
         console.error('❌ Erro ao calcular Altseason:', e.message);
-        // Fallback
         if (result.btcDominance) {
             result.altseasonIndex = Math.round(100 - (result.btcDominance * 1.4));
             result.altseasonIndex = Math.min(100, Math.max(0, result.altseasonIndex));
