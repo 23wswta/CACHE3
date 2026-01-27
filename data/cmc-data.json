@@ -28,7 +28,7 @@
       "status": "normal"
     },
     "dxy": {
-      "value": 95.76,
+      "value": 95.78,
       "change": 0
     },
     "gold": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 3110932192958.281,
+      "value": 3112871822869.034,
       "formatted": "$3.11T",
-      "change": 1.4136061532855733
+      "change": 1.476836352997893
     }
   },
-  "lastUpdate": "2026-01-27T22:48:32.875Z",
+  "lastUpdate": "2026-01-27T22:58:21.885Z",
   "error": null
 }
