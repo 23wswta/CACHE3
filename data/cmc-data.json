@@ -23,16 +23,16 @@
   },
   "marketIndicators": {
     "vix": {
-      "value": 16.35,
+      "value": 16.17,
       "change": 0,
       "status": "normal"
     },
     "dxy": {
-      "value": 96.13,
+      "value": 96.23,
       "change": 0
     },
     "gold": {
-      "value": 5275.1,
+      "value": 5326.2,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 3106711537594.103,
-      "formatted": "$3.11T",
-      "change": 1.1551297194571937
+      "value": 3099963671019.9165,
+      "formatted": "$3.10T",
+      "change": 1.4486698352791862
     }
   },
-  "lastUpdate": "2026-01-28T07:58:43.283Z",
+  "lastUpdate": "2026-01-28T09:04:16.208Z",
   "error": null
 }
