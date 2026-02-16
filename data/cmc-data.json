@@ -32,7 +32,7 @@
       "change": 0
     },
     "gold": {
-      "value": 5017.7,
+      "value": 5012,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2431153565760.157,
+      "value": 2431146495909.98,
       "formatted": "$2.43T",
-      "change": 0.2808068376582514
+      "change": 0.28051521877824487
     }
   },
-  "lastUpdate": "2026-02-16T23:20:07.630Z",
+  "lastUpdate": "2026-02-16T23:47:50.383Z",
   "error": null
 }
