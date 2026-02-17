@@ -28,11 +28,11 @@
       "status": "elevated"
     },
     "dxy": {
-      "value": 97.14,
+      "value": 97.13,
       "change": 0
     },
     "gold": {
-      "value": 4898.9,
+      "value": 4895.5,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2404030123450.7495,
-      "formatted": "$2.40T",
-      "change": -1.387608894738592
+      "value": 2407492625193.8975,
+      "formatted": "$2.41T",
+      "change": -1.2455784048677543
     }
   },
-  "lastUpdate": "2026-02-17T21:39:43.579Z",
+  "lastUpdate": "2026-02-17T22:00:12.534Z",
   "error": null
 }
