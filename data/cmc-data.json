@@ -1,7 +1,7 @@
 {
   "fearGreed": 14,
   "fearGreedClassification": "Extreme fear",
-  "btcDominance": 58.14,
+  "btcDominance": 58.19,
   "altseasonIndex": 36,
   "fedWatch": {
     "currentRate": {
@@ -51,6 +51,6 @@
       "change": 1.0314556885532784
     }
   },
-  "lastUpdate": "2026-02-28T19:43:41.341Z",
+  "lastUpdate": "2026-02-28T19:52:47.629Z",
   "error": null
 }
