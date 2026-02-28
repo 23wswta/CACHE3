@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2280560447776.258,
+      "value": 2282856473886.6855,
       "formatted": "$2.28T",
-      "change": -4.056845656304853
+      "change": -3.9602518616941236
     }
   },
-  "lastUpdate": "2026-02-28T10:41:36.268Z",
+  "lastUpdate": "2026-02-28T10:55:13.191Z",
   "error": null
 }
