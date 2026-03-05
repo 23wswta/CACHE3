@@ -12,7 +12,7 @@
       "date": "2026-03-18",
       "label": "17-18 Mar 2026",
       "time": "16:00",
-      "daysUntil": 14
+      "daysUntil": 13
     },
     "probabilities": {
       "cut": 40,
@@ -32,7 +32,7 @@
       "change": 0
     },
     "gold": {
-      "value": 5162.2,
+      "value": 5168.8,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2531899287632.419,
+      "value": 2531285247845.811,
       "formatted": "$2.53T",
-      "change": 5.0882309464769255
+      "change": 5.062744800475547
     }
   },
-  "lastUpdate": "2026-03-04T23:46:16.930Z",
+  "lastUpdate": "2026-03-05T00:00:24.168Z",
   "error": null
 }
