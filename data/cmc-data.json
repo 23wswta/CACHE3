@@ -12,7 +12,7 @@
       "date": "2026-06-17",
       "label": "16-17 Jun 2026",
       "time": "16:00",
-      "daysUntil": 10
+      "daysUntil": 9
     },
     "probabilities": {
       "cut": 40,
@@ -28,11 +28,11 @@
       "status": "elevated"
     },
     "dxy": {
-      "value": 100.11,
+      "value": 100.06,
       "change": 0
     },
     "gold": {
-      "value": 4354.2,
+      "value": 4350.1,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2257981386502.521,
-      "formatted": "$2.26T",
-      "change": 3.799123983031251
+      "value": 2252504012569.0894,
+      "formatted": "$2.25T",
+      "change": 2.4804895209616267
     }
   },
-  "lastUpdate": "2026-06-07T23:37:59.719Z",
+  "lastUpdate": "2026-06-08T01:57:13.014Z",
   "error": null
 }
