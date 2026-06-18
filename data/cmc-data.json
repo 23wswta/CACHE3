@@ -12,7 +12,7 @@
       "date": "2026-07-29",
       "label": "28-29 Jul 2026",
       "time": "16:00",
-      "daysUntil": 42
+      "daysUntil": 41
     },
     "probabilities": {
       "cut": 40,
@@ -28,11 +28,11 @@
       "status": "elevated"
     },
     "dxy": {
-      "value": 100.34,
+      "value": 100.28,
       "change": 0
     },
     "gold": {
-      "value": 4292.1,
+      "value": 4338,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2301666916260.6655,
-      "formatted": "$2.30T",
-      "change": -1.475108639453845
+      "value": 2305708466842.447,
+      "formatted": "$2.31T",
+      "change": -1.6972576419993162
     }
   },
-  "lastUpdate": "2026-06-17T23:53:28.412Z",
+  "lastUpdate": "2026-06-18T02:10:28.939Z",
   "error": null
 }
