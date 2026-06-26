@@ -23,7 +23,7 @@
   },
   "marketIndicators": {
     "vix": {
-      "value": 18.41,
+      "value": 18.89,
       "change": 0,
       "status": "elevated"
     },
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2158472475590.913,
+      "value": 2161136206714.0793,
       "formatted": "$2.16T",
-      "change": 0.12199547085796844
+      "change": 0.717764010493282
     }
   },
-  "lastUpdate": "2026-06-26T22:00:59.449Z",
+  "lastUpdate": "2026-06-26T23:14:41.585Z",
   "error": null
 }
