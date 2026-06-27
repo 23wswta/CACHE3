@@ -1,7 +1,7 @@
 {
   "fearGreed": 16,
   "fearGreedClassification": "Extreme fear",
-  "btcDominance": 57.99,
+  "btcDominance": 58.02,
   "altseasonIndex": 40,
   "fedWatch": {
     "currentRate": {
@@ -12,7 +12,7 @@
       "date": "2026-07-29",
       "label": "28-29 Jul 2026",
       "time": "16:00",
-      "daysUntil": 33
+      "daysUntil": 32
     },
     "probabilities": {
       "cut": 40,
@@ -23,7 +23,7 @@
   },
   "marketIndicators": {
     "vix": {
-      "value": 18.89,
+      "value": 18.41,
       "change": 0,
       "status": "elevated"
     },
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2161136206714.0793,
+      "value": 2157267227786.0261,
       "formatted": "$2.16T",
-      "change": 0.717764010493282
+      "change": 1.1071256269840644
     }
   },
-  "lastUpdate": "2026-06-26T23:14:41.585Z",
+  "lastUpdate": "2026-06-27T01:23:24.107Z",
   "error": null
 }
