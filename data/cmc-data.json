@@ -1,7 +1,7 @@
 {
   "fearGreed": 17,
   "fearGreedClassification": "Extreme fear",
-  "btcDominance": 58.19,
+  "btcDominance": 58.17,
   "altseasonIndex": 39,
   "fedWatch": {
     "currentRate": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2155099343041.1685,
+      "value": 2162375155333.9575,
       "formatted": "$2.16T",
-      "change": -0.3439473776398015
+      "change": -0.25027380041999486
     }
   },
-  "lastUpdate": "2026-06-28T10:35:21.899Z",
+  "lastUpdate": "2026-06-28T12:06:20.168Z",
   "error": null
 }
