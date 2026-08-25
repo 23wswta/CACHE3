@@ -1,7 +1,7 @@
 {
   "fearGreed": 83,
   "fearGreedClassification": "Extreme greed",
-  "btcDominance": 59.78,
+  "btcDominance": 59.8,
   "altseasonIndex": 35,
   "fedWatch": {
     "currentRate": {
@@ -28,11 +28,11 @@
       "status": "normal"
     },
     "dxy": {
-      "value": 99.08,
+      "value": 99.09,
       "change": 0
     },
     "gold": {
-      "value": 4698.1,
+      "value": 4703,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2724262334929.223,
+      "value": 2724130087941.202,
       "formatted": "$2.72T",
-      "change": 1.9949992555062634
+      "change": 1.6904482200114614
     }
   },
-  "lastUpdate": "2026-08-25T05:51:01.506Z",
+  "lastUpdate": "2026-08-25T06:19:27.177Z",
   "error": null
 }
