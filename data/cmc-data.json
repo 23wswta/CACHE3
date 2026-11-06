@@ -12,7 +12,7 @@
       "date": "2026-12-16",
       "label": "15-16 Dez 2026",
       "time": "16:00",
-      "daysUntil": 41
+      "daysUntil": 40
     },
     "probabilities": {
       "cut": 30,
@@ -28,11 +28,11 @@
       "status": "high"
     },
     "dxy": {
-      "value": 101.59,
+      "value": 101.68,
       "change": 0
     },
     "gold": {
-      "value": 4097.9,
+      "value": 4068.3,
       "change": 0
     },
     "sp500": {
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2558437884069.8975,
-      "formatted": "$2.56T",
-      "change": -7.561542828785771
+      "value": 2584028272096.3623,
+      "formatted": "$2.58T",
+      "change": -7.399721293320703
     }
   },
-  "lastUpdate": "2026-11-05T22:54:05.840Z",
+  "lastUpdate": "2026-11-06T02:56:23.780Z",
   "error": null
 }
