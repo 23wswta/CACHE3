@@ -12,7 +12,7 @@
       "date": "2026-12-16",
       "label": "15-16 Dez 2026",
       "time": "16:00",
-      "daysUntil": 40
+      "daysUntil": 39
     },
     "probabilities": {
       "cut": 30,
@@ -46,11 +46,11 @@
     "btcPrice": null,
     "ethPrice": null,
     "totalMarketCap": {
-      "value": 2573106191521.9946,
+      "value": 2573616428842.352,
       "formatted": "$2.57T",
-      "change": -2.2991083534356895
+      "change": -2.8511683762562012
     }
   },
-  "lastUpdate": "2026-11-06T22:17:41.796Z",
+  "lastUpdate": "2026-11-07T01:59:24.560Z",
   "error": null
 }
